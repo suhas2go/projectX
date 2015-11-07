@@ -6,10 +6,19 @@
     xmlns:local="using:newapp"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d">
+    mc:Ignorable="d" Margin="0,-51,0,51">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Button x:Name="SignUp" Content="Sign Up?" HorizontalAlignment="Left" Margin="247,10,0,0" VerticalAlignment="Top" Height="62" Width="103" Click="SignUp_Click"/>
-        
+        <Button x:Name="SignUp" Content="Sign Up?" HorizontalAlignment="Right"  VerticalAlignment="Top" Click="SignUp_Click" Height="49" Width="100"/>
+
+        <StackPanel Orientation="Vertical" Margin="56,90,44,10">
+
+
+            <TextBlock Text="Name" FontSize="20"/>
+            <TextBox FontSize="20"/>
+            <TextBlock Text="Password" FontSize="20"/>
+            <PasswordBox FontSize="20"/>
+        </StackPanel>
+
     </Grid>
 </Page>
