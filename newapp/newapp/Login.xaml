@@ -9,14 +9,14 @@
     mc:Ignorable="d" Margin="0,-51,0,51">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Button x:Name="SignUp" Content="Sign Up?" HorizontalAlignment="Right"  VerticalAlignment="Top" Click="SignUp_Click" Height="49" Width="100"/>
+        <Button x:Name="SignUp" Content="Sign Up?" HorizontalAlignment="Right"  VerticalAlignment="Top" Click="SignUp_Click" Height="49" Width="100" Margin="0,84,0,0"/>
 
-        <StackPanel Orientation="Vertical" Margin="56,90,44,10">
+        <StackPanel Orientation="Vertical" Margin="56,204,44,-104">
 
 
-            <TextBlock Text="Name" FontSize="20"/>
-            <TextBox FontSize="20"/>
-            <TextBlock Text="Password" FontSize="20"/>
+            <TextBlock Name="NameInput1" Text="Name" FontSize="20"/>
+            <TextBox FontSize="20" Text=""/>
+            <TextBlock Name="PasswordInput1" Text="Password" FontSize="20"/>
             <PasswordBox FontSize="20"/>
         </StackPanel>
 

@@ -28,6 +28,8 @@ namespace newapp
         {
             this.InitializeComponent();
         }
+     //   private void NameInput.Text
+
 
         private void SignUp_Click(object sender, RoutedEventArgs e)
         {
