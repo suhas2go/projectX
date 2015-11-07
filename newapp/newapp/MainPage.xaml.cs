@@ -39,7 +39,6 @@ namespace newapp
         {
             if (Profile.IsSelected)
             {
-
                 MyFrame.Navigate(typeof(Profile));
                 TitleTextBlock.Text = "Profile";
             }
