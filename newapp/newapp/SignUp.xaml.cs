@@ -32,5 +32,10 @@ namespace newapp
             MainPage page = new MainPage();
             this.Frame.Navigate(typeof(MainPage));
         }
+
+        private void RadioButton_Click(System.Object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

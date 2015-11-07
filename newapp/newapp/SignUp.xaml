@@ -10,13 +10,18 @@
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Button x:Name="NewUserCreated" Content="Done?" HorizontalAlignment="Center" VerticalAlignment="Bottom" Click="NewUserCreated_Click"/>
         <StackPanel Orientation="Vertical" Margin="50">
-           
-           
+
+
             <TextBlock Text="Name" FontSize="20"/>
             <TextBox FontSize="20"></TextBox>
             <TextBlock Text="Password" FontSize="20"></TextBlock>
             <PasswordBox FontSize="20"></PasswordBox>
+            <TextBlock Text="Gender" FontSize="20"></TextBlock>
+            <RadioButton  Name="malerb" Content="Male"   Margin="0,0,154,0"/>
+            <RadioButton  Name="femalerb" Content="Female"   Margin="0,0,140,0"/>
+            <TextBlock Text="Interests" FontSize="20"></TextBlock>
         </StackPanel>
+        
 
 
 
