@@ -25,6 +25,34 @@ namespace newapp
         public MainPage()
         {
             this.InitializeComponent();
+            MyFrame.Navigate(typeof(Profile));
+            TitleTextBlock.Text = "Profile";
+            Profile.IsSelected = true;
+        }
+
+        private void HamburgerButton_Click(object sender, RoutedEventArgs e)
+        {
+            MySplitView.IsPaneOpen = !MySplitView.IsPaneOpen;
+        }
+
+        private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (Profile.IsSelected)
+            {
+
+                MyFrame.Navigate(typeof(Profile));
+                TitleTextBlock.Text = "Profile";
+            }
+            else if (EventsHouse.IsSelected)
+            {
+                MyFrame.Navigate(typeof(EventsHouse));
+                TitleTextBlock.Text = "Events House";
+            }
+            else if (Alerts.IsSelected)
+            {
+                MyFrame.Navigate(typeof(Alerts));
+                TitleTextBlock.Text = "Notifications";
+            }
         }
     }
 }
