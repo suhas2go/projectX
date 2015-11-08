@@ -18,7 +18,7 @@
             <PasswordBox Name="PasswordInput2" FontSize="16"></PasswordBox>
             <TextBlock Text="Gender" FontSize="16"></TextBlock>
             <RadioButton  Name="GenderRadMale" Content="Male"   Margin="0,0,154,0" FontSize="16" Checked="GenderRadMale_Checked"/>
-            <RadioButton  Name="GenderRadFemale" Content="Female"   Margin="0,0,140,0" FontSize="16" Checked="GenderRadFemale_Checked"/>
+            <RadioButton  Name="GenderRadFemale" Content="Female"   Margin="0,0,140,0" FontSize="16" Checked="GenderRadMale_Checked"/>
             <TextBlock Text="Interests" FontSize="20"></TextBlock>
             <CheckBox x:Name="FootballTick1" Content="Football" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="16" Checked="FootballTick1_Checked"/>
             <CheckBox x:Name="MovieTick1" Content="Movie" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="16" Checked="MovieTick1_Checked"/>

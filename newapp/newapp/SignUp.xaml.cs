@@ -27,65 +27,68 @@ namespace newapp
     
     public sealed partial class SignUp : Page
     {
+        bool g1;
+        bool ftb1=false;
+        bool mv1=false;
+        bool disc1=false;
+        bool csgo1=false;
         public SignUp()
         {
             this.InitializeComponent();
         }
 
-        private void NewUserCreated_Click(object sender, RoutedEventArgs e)
-        {   /*
+        private async void NewUserCreated_Click(object sender, RoutedEventArgs e)
+        {   
             Person p1 = new Person
             {
                 name = NameInput2.Text,
                 pwd =PasswordInput2.Password,
-                g = ,
-                ftbl=,
-                mv=,
-                disc=,
-                csgo=,
+                g = g1,
+                ftb= ftb1,
+                mv=mv1,
+                disc=disc1,
+                csgo=csgo1,
                 age= AgeInput2.Text,
                 contactno=ContactInput2.Text
-                 
-
-
-            };
-            wait App.MobileService.GetTable<Person>().InsertAsync(p1);
-            var m1 = new MessageDialog("Data Inserted").ShowAsync();
-            nameTxt.Text = "";
-            emailTxt.Text = "";
+             };
+            await App.MobileService.GetTable<Person>().InsertAsync(p1);
+            //var m1 = new MessageDialog("Data Inserted").ShowAsync();
+            NameInput2.Text = "";
+            AgeInput2.Text = "";
+            ContactInput2.Text = "";
             MainPage page = new MainPage();
             this.Frame.Navigate(typeof(MainPage));
-            */
+            
         }
-
+        
         private void GenderRadMale_Checked(object sender, RoutedEventArgs e)
         {
-
+            g1 = true;
         }
 
         private void GenderRadFemale_Checked(object sender, RoutedEventArgs e)
         {
-
+            g1 = false;
         }
 
         private void FootballTick1_Checked(object sender, RoutedEventArgs e)
         {
-
+            ftb1 = true;
         }
 
         private void MovieTick1_Checked(object sender, RoutedEventArgs e)
         {
-
+            mv1 = true;
         }
 
         private void DiscussionTick1_Checked(object sender, RoutedEventArgs e)
         {
-
+            disc1 = true;
         }
 
         private void CounterStrikeTick1_Checked(object sender, RoutedEventArgs e)
         {
-
+           csgo1 = true;
         }
     }
 }

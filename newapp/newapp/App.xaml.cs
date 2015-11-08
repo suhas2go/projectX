@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Microsoft.WindowsAzure.MobileServices;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -34,7 +35,10 @@ namespace newapp
             this.InitializeComponent();
             this.Suspending += OnSuspending;
         }
-
+        public static MobileServiceClient MobileService = new MobileServiceClient(
+             "https://fristrange.azure-mobile.net/",
+             "bDOSSfWeTiTlkhDJIKPJAATnCEyZxu47"
+         );
         /// <summary>
         /// Invoked when the application is launched normally by the end user.  Other entry points
         /// will be used such as when the application is launched to open a specific file.
