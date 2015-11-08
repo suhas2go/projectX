@@ -6,6 +6,7 @@ using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
+using Windows.UI.Popups;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
 using Windows.UI.Xaml.Data;
@@ -27,9 +28,6 @@ namespace newapp
         public Login()
         {
             this.InitializeComponent();
-             string NamefromLogin = NameInput1.Text;
-             string PasswordfromLogin = PasswordInput1.Text;
-
         }
         bool GotoHome = true;
         private void SignUp_Click(object sender, RoutedEventArgs e)
@@ -37,10 +35,24 @@ namespace newapp
             this.Frame.Navigate(typeof(SignUp));
         }
 
-        private void LoginEntered_Click(object sender, RoutedEventArgs e)
+        private async void LoginEntered_Click(object sender, RoutedEventArgs e)
         {
-            if (GotoHome== true) { this.Frame.Navigate(typeof(MainPage)); }
-                 
+            
+            List<Person> loggedPerson =await App.MobileService.GetTable<Person>().Where(x => x.name == NameInput1.Text & x.pwd == PasswordInput1.Text).ToListAsync();
+            
+
+            if (loggedPerson.Count==0)
+            { GotoHome = false;
+              var dialog = new MessageDialog("Incorrect username or password");
+              await dialog.ShowAsync();
+            }
+            
+            if (GotoHome == true)
+            {
+                GlobalVar.Globalname = loggedPerson[0].name;
+                this.Frame.Navigate(typeof(MainPage));
+            }
+            
         }
     }
 }

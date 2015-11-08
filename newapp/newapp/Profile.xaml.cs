@@ -25,6 +25,7 @@ namespace newapp
         public Profile()
         {
             this.InitializeComponent();
+            DisplayName.Text = GlobalVar.Globalname;
         }
 
         private void DisplayName_SelectionChanged(object sender, RoutedEventArgs e)

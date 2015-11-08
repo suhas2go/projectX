@@ -13,6 +13,7 @@ namespace newapp
         /// </summary>
         public static string Globalname = "Important Text";
 
+
         /// <summary>
         /// Static value protected by access routine.
         /// </summary>
