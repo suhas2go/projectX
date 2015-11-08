@@ -102,6 +102,10 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Create.xaml.cs">
+      <DependentUpon>Create.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Event.cs" />
     <Compile Include="EventsHouse.xaml.cs">
       <DependentUpon>EventsHouse.xaml</DependentUpon>
     </Compile>
@@ -119,6 +123,7 @@
     <Compile Include="SignUp.xaml.cs">
       <DependentUpon>SignUp.xaml</DependentUpon>
     </Compile>
+    <Compile Include="var.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -143,6 +148,10 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Page Include="Alerts.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Create.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

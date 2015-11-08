@@ -57,7 +57,7 @@ namespace newapp
             AgeInput2.Text = "";
             ContactInput2.Text = "";
             MainPage page = new MainPage();
-            this.Frame.Navigate(typeof(MainPage));
+            this.Frame.Navigate(typeof(EventsHouse));
             
         }
         

@@ -52,10 +52,17 @@ namespace newapp
                 MyFrame.Navigate(typeof(Alerts));
                 TitleTextBlock.Text = "Notifications";
             }
-            else if(Signout.IsSelected)
+            else if (Signout.IsSelected)
             {
                 this.Frame.Navigate(typeof(Login));
             }
+            else if (CreateEvent.IsSelected)
+            {
+                MyFrame.Navigate(typeof(Create));
+                TitleTextBlock.Text = "Create Event";
+            }
+
+
         }
     }
 }
