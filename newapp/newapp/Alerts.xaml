@@ -8,7 +8,7 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <GridView x:Name="gridView" HorizontalAlignment="Left" Height="413" Margin="10,217,0,0" VerticalAlignment="Top" Width="340">
+        <GridView x:Name="gridView" HorizontalAlignment="Left" Height="413" Margin="10,217,0,0" VerticalAlignment="Top" Width="340" ItemClick="gridView_ItemClick" IsItemClickEnabled="True">
             <GridView.ItemTemplate>
                 <DataTemplate>
                     <StackPanel>

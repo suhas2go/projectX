@@ -74,6 +74,13 @@ namespace newapp
         {
             return (rad / Math.PI * 180.0);
         }
+
+        private async void gridView_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            var ev = (Event)e.ClickedItem;
+            var dialog = new MessageDialog(ev.contactno);
+            await dialog.ShowAsync();
+        }
     }
 }
 
