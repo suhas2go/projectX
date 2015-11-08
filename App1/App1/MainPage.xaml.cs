@@ -16,22 +16,21 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
-namespace newapp
+namespace App1
 {
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class Alerts : Page
+    public sealed partial class MainPage : Page
     {
-        public Alerts()
+        public MainPage()
         {
             this.InitializeComponent();
         }
 
-        private async void button_Click(object sender, RoutedEventArgs e)
+        private void button_Click(object sender, RoutedEventArgs e)
         {// Geolocator is in the Windows.Devices.Geolocation namespace
             Geolocator geo = new Geolocator();
             // await this because we don't know hpw long it will take to complete and we don't want to block the UI
@@ -39,8 +38,8 @@ namespace newapp
             double lat = pos.Coordinate.Point.Position.Latitude; // current latitude
             double longt = pos.Coordinate.Point.Position.Longitude; // current longitude
 
-           List<Event> interestEvents = await App.MobileService.GetTable<Event>().Where(x => x.hostname != GlobalVar.Globalname & ((GlobalVar.Globalftb == true & x.ftb == GlobalVar.Globalftb) | (GlobalVar.Globalmv == true & x.mv == GlobalVar.Globalmv) | (GlobalVar.Globaldisc == true & x.disc == GlobalVar.Globaldisc) | (GlobalVar.Globalcsgo == true & x.csgo == GlobalVar.Globalcsgo))).ToListAsync();
-           
+            List<Event> interestEvents = await App.MobileService.GetTable<Event>().Where(x => x.hostname != GlobalVar.Globalname & (func1(x.latitude, x.longitude, lat, longt) == true) & ((GlobalVar.Globalftb == true & x.ftb == GlobalVar.Globalftb) | (GlobalVar.Globalmv == true & x.mv == GlobalVar.Globalmv) | (GlobalVar.Globaldisc == true & x.disc == GlobalVar.Globaldisc) | (GlobalVar.Globalcsgo == true & x.csgo == GlobalVar.Globalcsgo))).ToListAsync();
+
 
             if (interestEvents.Count == 0)
             {
@@ -76,4 +75,3 @@ namespace newapp
         }
     }
 }
-

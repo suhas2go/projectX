@@ -52,14 +52,14 @@ namespace newapp
                 contactno=ContactInput2.Text
              };
             await App.MobileService.GetTable<Person>().InsertAsync(p1);
-            GlobalVar.Globalname = p1.name;
-            GlobalVar.Globalcontact = p1.contactno;
+           // GlobalVar.Globalname = p1.name;
+           // GlobalVar.Globalcontact = p1.contactno;
             //var m1 = new MessageDialog("Data Inserted").ShowAsync();
             NameInput2.Text = "";
             AgeInput2.Text = "";
             ContactInput2.Text = "";
             MainPage page = new MainPage();
-            this.Frame.Navigate(typeof(EventsHouse));
+            this.Frame.Navigate(typeof(MainPage));
             
         }
         
