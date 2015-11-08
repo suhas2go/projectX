@@ -9,6 +9,8 @@ using Windows.UI.Popups;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
+using Windows.Devices.Geolocation;
+using System.Threading.Tasks;
 using Windows.UI.Xaml.Controls.Primitives;
 using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
@@ -36,17 +38,37 @@ namespace newapp
 
         private async void NewEventCreated_Click(object sender, RoutedEventArgs e)
         {
+            // Geolocator is in the Windows.Devices.Geolocation namespace
+            Geolocator geo = new Geolocator();
+            // await this because we don't know hpw long it will take to complete and we don't want to block the UI
+           Geoposition pos = await geo.GetGeopositionAsync(); // get the raw geoposition data
+           double lat = pos.Coordinate.Point.Position.Latitude; // current latitude
+           double longt = pos.Coordinate.Point.Position.Longitude; // current longitude
+
             Event e1 = new Event()
             {
-
-      
+                
+                eventname = EventName.Text,
+                hostname = GlobalVar.Globalname,
+                venue = Venue.Text,
+                time = EventTime.Text,
                 ftb = ftb1,
                 mv = mv1,
                 disc = disc1,
-                csgo = csgo1
+                csgo = csgo1,
+                p1name = " ",
+                p2name = " ",
+                p3name = " ",
+                p1val = -1,
+                p2val = -1,
+                p3val = -1,
+                latitude = (int)lat,
+                longitude = (int)longt,
+                contactno = GlobalVar.Globalcontact
 
-            };
-            // await App.MobileService.GetTable<Event>().InsertAsync(e1);
+        };
+
+            await App.MobileService.GetTable<Event>().InsertAsync(e1);
             //var m1 = new MessageDialog("Data Inserted").ShowAsync();
             var dialog = new MessageDialog("Event was Broadcasted and saved on server");
             await dialog.ShowAsync();

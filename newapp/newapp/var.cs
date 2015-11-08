@@ -12,6 +12,7 @@ namespace newapp
         /// Global variable that is constant.
         /// </summary>
         public static string Globalname = "Important Text";
+        public static string Globalcontact = "Important Text";
 
 
         /// <summary>

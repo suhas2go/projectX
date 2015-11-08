@@ -50,6 +50,7 @@ namespace newapp
             if (GotoHome == true)
             {
                 GlobalVar.Globalname = loggedPerson[0].name;
+                GlobalVar.Globalcontact = loggedPerson[0].contactno;
                 this.Frame.Navigate(typeof(MainPage));
             }
             
