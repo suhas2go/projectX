@@ -8,20 +8,28 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Button x:Name="NewUserCreated" Content="Done?" HorizontalAlignment="Center" VerticalAlignment="Bottom" Click="NewUserCreated_Click"/>
-        <StackPanel Orientation="Vertical" Margin="50">
+        <Button x:Name="NewUserCreated" Content="Done?" HorizontalAlignment="Center" VerticalAlignment="Bottom" Click="NewUserCreated_Click" Margin="144,0,153,107"/>
+        <StackPanel Orientation="Vertical" Margin="50,50,50,139">
 
 
-            <TextBlock Text="Name" FontSize="20"/>
-            <TextBox FontSize="20"></TextBox>
-            <TextBlock Text="Password" FontSize="20"></TextBlock>
-            <PasswordBox FontSize="20"></PasswordBox>
-            <TextBlock Text="Gender" FontSize="20"></TextBlock>
-            <RadioButton  Name="malerb" Content="Male"   Margin="0,0,154,0"/>
-            <RadioButton  Name="femalerb" Content="Female"   Margin="0,0,140,0"/>
+            <TextBlock Text="Name" FontSize="16"/>
+            <TextBox  FontSize="16"></TextBox>
+            <TextBlock Text="Password" FontSize="16"></TextBlock>
+            <PasswordBox FontSize="16"></PasswordBox>
+            <TextBlock Text="Gender" FontSize="16"></TextBlock>
+            <RadioButton  Name="malerb" Content="Male"   Margin="0,0,154,0" FontSize="16"/>
+            <RadioButton  Name="femalerb" Content="Female"   Margin="0,0,140,0" FontSize="16"/>
             <TextBlock Text="Interests" FontSize="20"></TextBlock>
+            <CheckBox x:Name="check1" Content="Football" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="16"/>
+            <CheckBox x:Name="check2" Content="Movie" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="16"/>
+            <CheckBox x:Name="check3" Content="Discussion" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="16"/>
+            <CheckBox x:Name="check4" Content="CS go" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="16"/>
+            <TextBlock  Text="Age" FontSize="16"/>
+            <TextBox  FontSize="16"></TextBox>
+
+
         </StackPanel>
-        
+
 
 
 
