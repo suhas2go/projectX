@@ -18,15 +18,15 @@
             <PasswordBox Name="PasswordInput2" FontSize="16"></PasswordBox>
             <TextBlock Text="Gender" FontSize="16"></TextBlock>
             <RadioButton  Name="GenderRadMale" Content="Male"   Margin="0,0,154,0" FontSize="16" Checked="GenderRadMale_Checked"/>
-            <RadioButton  Name="GenderRadFemale" Content="Female"   Margin="0,0,140,0" FontSize="16"/>
+            <RadioButton  Name="GenderRadFemale" Content="Female"   Margin="0,0,140,0" FontSize="16" Checked="GenderRadFemale_Checked"/>
             <TextBlock Text="Interests" FontSize="20"></TextBlock>
-            <CheckBox x:Name="FootballTick1" Content="Football" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="16"/>
-            <CheckBox x:Name="MovieTick1" Content="Movie" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="16"/>
-            <CheckBox x:Name="DiscussionTick1" Content="Discussion" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="16"/>
-            <CheckBox x:Name="CounterStrikeTick1" Content="CounterStrike" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="16"/>
+            <CheckBox x:Name="FootballTick1" Content="Football" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="16" Checked="FootballTick1_Checked"/>
+            <CheckBox x:Name="MovieTick1" Content="Movie" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="16" Checked="MovieTick1_Checked"/>
+            <CheckBox x:Name="DiscussionTick1" Content="Discussion" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="16" Checked="DiscussionTick1_Checked"/>
+            <CheckBox x:Name="CounterStrikeTick1" Content="CounterStrike" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="16" Checked="CounterStrikeTick1_Checked"/>
             <TextBlock  Text="Age" FontSize="16"/>
             <TextBox  Name="AgeInput2" FontSize="16"></TextBox>
-            <TextBlock  Text="Contact" FontSize="16"/>
+            <TextBlock  Text="Contact No" FontSize="16"/>
             <TextBox  Name="ContactInput2" FontSize="16"></TextBox>
 
         </StackPanel>
