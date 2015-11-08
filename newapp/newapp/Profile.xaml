@@ -7,8 +7,24 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
-    <Grid>
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Button x:Name="NewUserCreated" Content="Save?" HorizontalAlignment="Center" VerticalAlignment="Bottom" Click="NewUserCreated_Click" Margin="144,0,153,0" RenderTransformOrigin="0.575,0.583"/>
+        <StackPanel Orientation="Vertical" Margin="10,10,10,50">
             <Image Source="Assets/Profile.png" VerticalAlignment="Top" Width="150"/>
-        
+            <TextBlock Text="Name" FontSize="16"/>
+            <TextBox  FontSize="16"></TextBox>
+            <TextBlock Text="Gender" FontSize="16"></TextBlock>
+            <RadioButton  Name="malerb" Content="Male"   Margin="0,0,154,0" FontSize="16"/>
+            <RadioButton  Name="femalerb" Content="Female"   Margin="0,0,140,0" FontSize="16"/>
+            <TextBlock Text="Interests" FontSize="20"></TextBlock>
+            <CheckBox x:Name="check1" Content="Football" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="16"/>
+            <CheckBox x:Name="check2" Content="Movie" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="16"/>
+            <CheckBox x:Name="check3" Content="Discussion" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="16"/>
+            <CheckBox x:Name="check4" Content="CS go" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="16"/>
+            <TextBlock  Text="Age" FontSize="16"/>
+            <TextBox  FontSize="16"></TextBox>
+
+
+        </StackPanel>
     </Grid>
 </Page>
