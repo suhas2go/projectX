@@ -8,8 +8,8 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Button x:Name="NewUserCreated" Content="Done?" HorizontalAlignment="Center" VerticalAlignment="Bottom" Click="NewUserCreated_Click" Margin="144,0,153,107"/>
-        <StackPanel Orientation="Vertical" Margin="50,50,50,139">
+        <Button x:Name="NewUserCreated" Content="Signup" HorizontalAlignment="Center" VerticalAlignment="Bottom" Click="NewUserCreated_Click" Margin="144,0,131,50" Width="85"/>
+        <StackPanel Orientation="Vertical" Margin="10,10,10,100">
 
 
             <TextBlock Text="Name" FontSize="16"/>
@@ -25,8 +25,9 @@
             <CheckBox x:Name="DiscussionTick1" Content="Discussion" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="16"/>
             <CheckBox x:Name="CounterStrikeTick1" Content="CounterStrike" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="16"/>
             <TextBlock  Text="Age" FontSize="16"/>
-            <TextBox  FontSize="16"></TextBox>
-
+            <TextBox  Name="AgeInput2" FontSize="16"></TextBox>
+            <TextBlock  Text="Contact" FontSize="16"/>
+            <TextBox  Name="ContactInput2" FontSize="16"></TextBox>
 
         </StackPanel>
 
