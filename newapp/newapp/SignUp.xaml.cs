@@ -33,7 +33,7 @@ namespace newapp
         }
 
         private void NewUserCreated_Click(object sender, RoutedEventArgs e)
-        {   
+        {   /*
             Person p1 = new Person
             {
                 name = NameInput2.Text,
@@ -49,12 +49,13 @@ namespace newapp
 
 
             };
-            await App.MobileService.GetTable<Person>().InsertAsync(p1);
+            wait App.MobileService.GetTable<Person>().InsertAsync(p1);
             var m1 = new MessageDialog("Data Inserted").ShowAsync();
             nameTxt.Text = "";
             emailTxt.Text = "";
             MainPage page = new MainPage();
             this.Frame.Navigate(typeof(MainPage));
+            */
         }
 
         private void GenderRadMale_Checked(object sender, RoutedEventArgs e)
