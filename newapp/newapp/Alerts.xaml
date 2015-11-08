@@ -17,6 +17,8 @@
                             <StackPanel>
                                 <TextBlock  Text="{Binding Path=hostname}" />
                                 <TextBlock  Width="700" Text="{Binding Path=eventname}" TextWrapping="Wrap" Style="{ThemeResource BodyTextBlockStyle}"/>
+                                <TextBlock  Text="{Binding Path=venue}" />
+                                <TextBlock  Text="{Binding Path=time}" />
                             </StackPanel>
                         </StackPanel>
                     </StackPanel>
