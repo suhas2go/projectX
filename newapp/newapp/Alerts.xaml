@@ -16,7 +16,7 @@
 
                             <StackPanel>
                                 <TextBlock  Text="{Binding Path=hostname}" />
-                                <TextBlock  Width="700" Text="{Binding Path=eventname}" TextWrapping="Wrap" Style="{ThemeResource BodyTextBlockStyle}"/>
+                                <TextBlock  Text="{Binding Path=eventname}"/>
                                 <TextBlock  Text="{Binding Path=venue}" />
                                 <TextBlock  Text="{Binding Path=time}" />
                             </StackPanel>
@@ -25,7 +25,7 @@
                 </DataTemplate>
             </GridView.ItemTemplate>
         </GridView>
-        <Button x:Name="button" Content="Button" HorizontalAlignment="Center" Margin="10,10,0,428" VerticalAlignment="Stretch" Click="button_Click" Width="192"/>
+        <Button x:Name="button" Content="Receive" HorizontalAlignment="Center" Margin="10,10,0,428" VerticalAlignment="Stretch" Click="button_Click" Width="192"/>
 
     </Grid>
 </Page>

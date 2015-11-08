@@ -8,7 +8,7 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Button x:Name="NewEventCreated" Content="Create" HorizontalAlignment="Right" VerticalAlignment="Bottom" Click="NewEventCreated_Click" Margin="0,0,147,68" Width="131"/>
+        <Button x:Name="NewEventCreated" Content="Broadcast" HorizontalAlignment="Right" VerticalAlignment="Bottom" Click="NewEventCreated_Click" Margin="0,0,147,68" Width="131"/>
         <StackPanel Orientation="Vertical" Margin="10,10,10,100">
 
 

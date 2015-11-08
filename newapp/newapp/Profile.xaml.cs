@@ -26,9 +26,29 @@ namespace newapp
         {
             this.InitializeComponent();
             DisplayName.Text = GlobalVar.Globalname;
+            if(GlobalVar.Globalg==true)
+            GenderProperty.Text = "Male";
+            else
+            GenderProperty.Text = "Female";
+            string interests = "";
+            if (GlobalVar.Globalftb == true)
+                interests += "Football\n";
+            if (GlobalVar.Globalmv == true)
+                interests += "Movies\n";
+            if (GlobalVar.Globaldisc == true)
+                interests += "Discussions\n";
+            if (GlobalVar.Globalcsgo == true)
+                interests += "CS Go\n";
+            FootballBool.Text = interests;
+            AgeProperty.Text = GlobalVar.Globalage;
         }
 
         private void DisplayName_SelectionChanged(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void GenderProperty_SelectionChanged(object sender, RoutedEventArgs e)
         {
 
         }

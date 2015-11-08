@@ -13,10 +13,12 @@ namespace newapp
         /// </summary>
         public static string Globalname = "Important Text";
         public static string Globalcontact = "Important Text";
+        public static bool Globalg = true;
         public static bool Globalftb = false;
         public static bool Globalmv = false;
         public static bool Globaldisc = false;
         public static bool Globalcsgo = false;
+        public static string Globalage = "Important Text";
 
         /// <summary>
         /// Static value protected by access routine.

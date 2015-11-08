@@ -55,6 +55,8 @@ namespace newapp
                 GlobalVar.Globalmv = loggedPerson[0].mv;
                 GlobalVar.Globaldisc= loggedPerson[0].disc;
                 GlobalVar.Globalcsgo = loggedPerson[0].csgo;
+                GlobalVar.Globalg = loggedPerson[0].g;
+                GlobalVar.Globalage = loggedPerson[0].age;
                 this.Frame.Navigate(typeof(MainPage));
             }
             

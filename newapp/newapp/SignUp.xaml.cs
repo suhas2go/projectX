@@ -52,8 +52,14 @@ namespace newapp
                 contactno=ContactInput2.Text
              };
             await App.MobileService.GetTable<Person>().InsertAsync(p1);
-           // GlobalVar.Globalname = p1.name;
-           // GlobalVar.Globalcontact = p1.contactno;
+            GlobalVar.Globalname = p1.name;
+            GlobalVar.Globalcontact = p1.contactno;
+            GlobalVar.Globalftb = p1.ftb;
+            GlobalVar.Globalmv = p1.mv;
+            GlobalVar.Globaldisc = p1.disc;
+            GlobalVar.Globalcsgo = p1.csgo;
+            GlobalVar.Globalg = p1.g;
+            GlobalVar.Globalage = p1.age;
             //var m1 = new MessageDialog("Data Inserted").ShowAsync();
             NameInput2.Text = "";
             AgeInput2.Text = "";
@@ -66,11 +72,13 @@ namespace newapp
         private void GenderRadMale_Checked(object sender, RoutedEventArgs e)
         {
             g1 = true;
+            GenderRadFemale.IsChecked = false;
         }
 
         private void GenderRadFemale_Checked(object sender, RoutedEventArgs e)
         {
             g1 = false;
+            GenderRadMale.IsChecked = false;
         }
 
         private void FootballTick1_Checked(object sender, RoutedEventArgs e)

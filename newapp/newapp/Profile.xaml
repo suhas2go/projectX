@@ -14,13 +14,10 @@
             <TextBlock Name="DisplayName" Text="NameProperty" TextAlignment="Center" FontSize="16" SelectionChanged="DisplayName_SelectionChanged"></TextBlock>
             <TextBlock Text="Gender" TextAlignment="Center" FontSize="16"></TextBlock>
 
-            <TextBlock Name="GenderProperty" TextAlignment="Center" Text="GenderProperty" FontSize="16"></TextBlock>
+            <TextBlock Name="GenderProperty" TextAlignment="Center" Text="GenderProperty" FontSize="16" SelectionChanged="GenderProperty_SelectionChanged"></TextBlock>
 
             <TextBlock Text="Interests" TextAlignment="Center" FontSize="20"></TextBlock>
             <TextBlock Name="FootballBool" TextAlignment="Center" Text="FootballProperty" FontSize="16"></TextBlock>
-            <TextBlock Name="MovieBool" Text="MovieProperty" TextAlignment="Center" FontSize="16"></TextBlock>
-            <TextBlock Name="CounterStrikeBool" TextAlignment="Center" Text="CounterStrikerProperty" FontSize="16"></TextBlock>
-            <TextBlock Name="DiscussionBool" TextAlignment="Center" Text="DiscussProperty" FontSize="16"></TextBlock>
 
 
             <TextBlock  Text="Age" TextAlignment="Center" FontSize="16"/>
