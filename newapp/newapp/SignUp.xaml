@@ -14,8 +14,8 @@
 
             <TextBlock Text="Name" FontSize="16"/>
             <TextBox  Name="NameInput2" FontSize="16"></TextBox>
-            <TextBlock Name="PasswordInput2" FontSize="16"></TextBlock>
-            <PasswordBox FontSize="16"></PasswordBox>
+            <TextBlock  Text="Password"  FontSize="16"></TextBlock>
+            <PasswordBox Name="PasswordInput2" FontSize="16"></PasswordBox>
             <TextBlock Text="Gender" FontSize="16"></TextBlock>
             <RadioButton  Name="GenderRadMale" Content="Male"   Margin="0,0,154,0" FontSize="16" Checked="GenderRadMale_Checked"/>
             <RadioButton  Name="GenderRadFemale" Content="Female"   Margin="0,0,140,0" FontSize="16"/>
