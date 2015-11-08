@@ -29,11 +29,18 @@ namespace newapp
             this.InitializeComponent();
              string NamefromLogin = NameInput1.Text;
              string PasswordfromLogin = PasswordInput1.Text;
+
         }
-       
+        bool GotoHome = true;
         private void SignUp_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(SignUp));
+        }
+
+        private void LoginEntered_Click(object sender, RoutedEventArgs e)
+        {
+            if (GotoHome== true) { this.Frame.Navigate(typeof(MainPage)); }
+                 
         }
     }
 }

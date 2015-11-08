@@ -33,9 +33,9 @@ namespace newapp
             this.Frame.Navigate(typeof(MainPage));
         }
 
-        private void RadioButton_Click(System.Object sender, RoutedEventArgs e)
+        private void GenderRadMale_Checked(object sender, RoutedEventArgs e)
         {
-
+            
         }
     }
 }

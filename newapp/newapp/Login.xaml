@@ -12,13 +12,12 @@
         <Button x:Name="SignUp" Content="Sign Up?" HorizontalAlignment="Right"  VerticalAlignment="Top" Click="SignUp_Click" Height="49" Width="100" Margin="0,84,44,0"/>
 
         <StackPanel Orientation="Vertical" Margin="56,204,44,-104">
-
-
             <TextBlock  Text="Name" FontSize="20"/>
-            <TextBox  Name="NameInput1" FontSize="20" Text=""/>
+            <TextBox  x:Name="NameInput1" FontSize="20" Text=""/>
             <TextBlock Text="Password" FontSize="20"/>
-            <TextBox Name="PasswordInput1"  FontSize="20"/>
+            <TextBox x:Name="PasswordInput1"  FontSize="20"/>
         </StackPanel>
+        <Button x:Name="LoginEntered" Content="Login" HorizontalAlignment="Left" Margin="56,84,0,0" VerticalAlignment="Top" Height="49" Width="98" Click="LoginEntered_Click"/>
 
     </Grid>
 </Page>

@@ -8,23 +8,23 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Button x:Name="NewUserCreated" Content="Save?" HorizontalAlignment="Center" VerticalAlignment="Bottom" Click="NewUserCreated_Click" Margin="144,0,153,0" RenderTransformOrigin="0.575,0.583"/>
-        <StackPanel Orientation="Vertical" Margin="10,10,10,50">
+      <StackPanel Orientation="Vertical" Margin="10,10,10,50">
             <Image Source="Assets/Profile.png" VerticalAlignment="Top" Width="150"/>
             <TextBlock Text="Name" FontSize="16"/>
-            <TextBox  FontSize="16"></TextBox>
-            <TextBlock Text="Gender" FontSize="16"></TextBlock>
-            <RadioButton  Name="malerb" Content="Male"   Margin="0,0,154,0" FontSize="16"/>
-            <RadioButton  Name="femalerb" Content="Female"   Margin="0,0,140,0" FontSize="16"/>
+            <TextBlock Name="DisplayName" Text="NameProperty" FontSize="16"></TextBlock>
+            <TextBlock Text="Gender:" FontSize="16"></TextBlock>
+
+            <TextBlock Name="GenderProperty" Text="GenderProperty" FontSize="16"></TextBlock>
+
             <TextBlock Text="Interests" FontSize="20"></TextBlock>
-            <CheckBox x:Name="check1" Content="Football" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="16"/>
-            <CheckBox x:Name="check2" Content="Movie" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="16"/>
-            <CheckBox x:Name="check3" Content="Discussion" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="16"/>
-            <CheckBox x:Name="check4" Content="CS go" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="16"/>
+            <TextBlock Name="FootballBool" Text="GenderProperty" FontSize="16"></TextBlock>
+            <TextBlock Name="MovieBool" Text="GenderProperty" FontSize="16"></TextBlock>
+            <TextBlock Name="CounterStrikeBool" Text="GenderProperty" FontSize="16"></TextBlock>
+            <TextBlock Name="DiscussionBool" Text="GenderProperty" FontSize="16"></TextBlock>
+          
+
             <TextBlock  Text="Age" FontSize="16"/>
-            <TextBox  FontSize="16"></TextBox>
-
-
+            <TextBlock  Name="AgeProperty"  Text="AgeProperty" FontSize="16"/>
         </StackPanel>
     </Grid>
 </Page>
