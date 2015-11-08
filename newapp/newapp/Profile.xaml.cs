@@ -26,5 +26,10 @@ namespace newapp
         {
             this.InitializeComponent();
         }
+
+        private void DisplayName_SelectionChanged(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
