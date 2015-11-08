@@ -13,7 +13,10 @@ namespace newapp
         /// </summary>
         public static string Globalname = "Important Text";
         public static string Globalcontact = "Important Text";
-
+        public static bool Globalftb = false;
+        public static bool Globalmv = false;
+        public static bool Globaldisc = false;
+        public static bool Globalcsgo = false;
 
         /// <summary>
         /// Static value protected by access routine.
@@ -35,9 +38,10 @@ namespace newapp
             }
         }
 
+       
         /// <summary>
         /// Global static field.
         /// </summary>
-        public static bool GlobalBoolean;
+
     }
 }

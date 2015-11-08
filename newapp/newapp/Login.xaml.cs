@@ -51,6 +51,10 @@ namespace newapp
             {
                 GlobalVar.Globalname = loggedPerson[0].name;
                 GlobalVar.Globalcontact = loggedPerson[0].contactno;
+                GlobalVar.Globalftb = loggedPerson[0].ftb;
+                GlobalVar.Globalmv = loggedPerson[0].mv;
+                GlobalVar.Globaldisc= loggedPerson[0].disc;
+                GlobalVar.Globalcsgo = loggedPerson[0].csgo;
                 this.Frame.Navigate(typeof(MainPage));
             }
             
