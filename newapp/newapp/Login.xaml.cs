@@ -27,10 +27,10 @@ namespace newapp
         public Login()
         {
             this.InitializeComponent();
+             string NamefromLogin = NameInput1.Text;
+             string PasswordfromLogin = PasswordInput1.Text;
         }
-     //   private void NameInput.Text
-
-
+       
         private void SignUp_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(SignUp));
