@@ -7,25 +7,42 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <GridView x:Name="gridView" HorizontalAlignment="Left" Height="413" Margin="10,217,0,0" VerticalAlignment="Top" Width="340" ItemClick="gridView_ItemClick" IsItemClickEnabled="True">
-            <GridView.ItemTemplate>
+    <Grid Margin="0,0,0,0" HorizontalAlignment="Stretch">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="58"/>
+            <RowDefinition/>
+
+        </Grid.RowDefinitions>
+        <Button Grid.Row="0" x:Name="button" Content="Receive" HorizontalAlignment="Center" Click="button_Click" Width="360" Height="58"/>
+
+        <ListView Grid.Row="1" ScrollViewer.VerticalScrollMode="Enabled"  x:Name="ListView" Height="562" Margin="10,10,0,0" HorizontalAlignment="Stretch" VerticalAlignment="Top" ItemClick="gridView_ItemClick" IsItemClickEnabled="True">
+            <ListView.ItemTemplate>
                 <DataTemplate>
                     <StackPanel>
-                        <StackPanel Orientation="Horizontal">
+                        <StackPanel Orientation="Vertical">
 
-                            <StackPanel>
-                                <TextBlock  Text="{Binding Path=hostname}" />
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock xml:space="preserve" Text="Host Name:"/>
+                                <TextBlock  xml:space="preserve" Text="{Binding Path=hostname }"/>
+                            </StackPanel>
+
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock  Text="Event Name: " />
                                 <TextBlock  Text="{Binding Path=eventname}"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock  Text="Venue: " />
                                 <TextBlock  Text="{Binding Path=venue}" />
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock  Text="Time: " />
                                 <TextBlock  Text="{Binding Path=time}" />
                             </StackPanel>
                         </StackPanel>
                     </StackPanel>
                 </DataTemplate>
-            </GridView.ItemTemplate>
-        </GridView>
-        <Button x:Name="button" Content="Receive" HorizontalAlignment="Center" Margin="10,10,0,428" VerticalAlignment="Stretch" Click="button_Click" Width="192"/>
+            </ListView.ItemTemplate>
+        </ListView>
 
     </Grid>
 </Page>

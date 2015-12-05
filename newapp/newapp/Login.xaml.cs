@@ -35,10 +35,15 @@ namespace newapp
             this.Frame.Navigate(typeof(SignUp));
         }
 
-        private async void LoginEntered_Click(object sender, RoutedEventArgs e)
+        private void login_event(object sender,KeyRoutedEventArgs e)
+        {
+            if(e.Key==Windows.System.VirtualKey.Enter)
+            LoginEntered_Click(sender, e);
+        }
+         private async void LoginEntered_Click(object sender, RoutedEventArgs e)
         {
             
-            List<Person> loggedPerson =await App.MobileService.GetTable<Person>().Where(x => x.name == NameInput1.Text & x.pwd == PasswordInput1.Text).ToListAsync();
+            List<Person> loggedPerson =await App.MobileService.GetTable<Person>().Where(x => x.name == NameInput1.Text & x.pwd == PasswordInput1.Password).ToListAsync();
             
 
             if (loggedPerson.Count==0)

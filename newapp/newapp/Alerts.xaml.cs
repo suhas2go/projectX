@@ -32,7 +32,8 @@ namespace newapp
         }
 
         private async void button_Click(object sender, RoutedEventArgs e)
-        {// Geolocator is in the Windows.Devices.Geolocation namespace
+        {
+            // Geolocator is in the Windows.Devices.Geolocation namespace
             Geolocator geo = new Geolocator();
             // await this because we don't know hpw long it will take to complete and we don't want to block the UI
             Geoposition pos = await geo.GetGeopositionAsync(); // get the raw geoposition data
@@ -48,7 +49,7 @@ namespace newapp
                 var dialog = new MessageDialog("No nearby events found");
                 await dialog.ShowAsync();
             }
-            gridView.ItemsSource = interestEvents;
+            ListView.ItemsSource = interestEvents;
         }
         private bool func1(int lat1, int lon1, double lat2, double lon2)
         {
