@@ -1,0 +1,38 @@
+﻿<Page
+    x:Class="newapp.SignUp"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:newapp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Button x:Name="NewUserCreated" Content="Signup" HorizontalAlignment="Center" VerticalAlignment="Bottom" Click="NewUserCreated_Click" Margin="144,0,131,50" Width="85"/>
+        <StackPanel Orientation="Vertical" Margin="10,10,10,100">
+
+
+            <TextBlock Text="Name" FontSize="16"/>
+            <TextBox  Name="NameInput2" FontSize="16"></TextBox>
+            <TextBlock  Text="Password"  FontSize="16"></TextBlock>
+            <PasswordBox Name="PasswordInput2" FontSize="16"></PasswordBox>
+            <TextBlock Text="Gender" FontSize="16"></TextBlock>
+            <RadioButton  Name="GenderRadMale" Content="Male"   Margin="0,0,154,0" FontSize="16" Checked="GenderRadMale_Checked"/>
+            <RadioButton  Name="GenderRadFemale" Content="Female"   Margin="0,0,140,0" FontSize="16" Checked="GenderRadFemale_Checked"/>
+            <TextBlock Text="Interests" FontSize="20"></TextBlock>
+            <CheckBox x:Name="FootballTick1" Content="Football" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="16" Checked="FootballTick1_Checked"/>
+            <CheckBox x:Name="MovieTick1" Content="Movie" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="16" Checked="MovieTick1_Checked"/>
+            <CheckBox x:Name="DiscussionTick1" Content="Discussion" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="16" Checked="DiscussionTick1_Checked"/>
+            <CheckBox x:Name="CounterStrikeTick1" Content="CounterStrike" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="16" Checked="CounterStrikeTick1_Checked"/>
+            <TextBlock  Text="Age" FontSize="16"/>
+            <TextBox  Name="AgeInput2" FontSize="16"></TextBox>
+            <TextBlock  Text="Contact No" FontSize="16"/>
+            <TextBox  Name="ContactInput2" FontSize="16"></TextBox>
+
+        </StackPanel>
+
+
+
+
+    </Grid>
+</Page>

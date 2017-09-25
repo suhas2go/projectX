@@ -1,0 +1,52 @@
+﻿<Page
+    x:Class="newapp.Alerts"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:newapp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Margin="0,0,0,0" HorizontalAlignment="Stretch">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="58"/>
+            <RowDefinition/>
+
+        </Grid.RowDefinitions>
+        <Button Grid.Row="0" x:Name="button" Content="Receive" HorizontalAlignment="Center" Click="button_Click" Width="360" Height="58"/>
+
+        <ListView Grid.Row="1" ScrollViewer.VerticalScrollMode="Enabled"  x:Name="ListView" Height="562" Margin="10,10,0,0" HorizontalAlignment="Stretch" VerticalAlignment="Top" ItemClick="gridView_ItemClick" IsItemClickEnabled="True">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel>
+                        <StackPanel Orientation="Vertical">
+
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock xml:space="preserve" Text="Host Name:"/>
+                                <TextBlock  xml:space="preserve" Text="{Binding Path=hostname }"/>
+                            </StackPanel>
+
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock  Text="Event Name: " />
+                                <TextBlock  Text="{Binding Path=eventname}"/>
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock  Text="Venue: " />
+                                <TextBlock  Text="{Binding Path=venue}" />
+                            </StackPanel>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock  Text="Time: " />
+                                <TextBlock  Text="{Binding Path=time}" />
+                            </StackPanel>
+                        </StackPanel>
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+    </Grid>
+</Page>
+
+
+
+

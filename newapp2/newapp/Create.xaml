@@ -1,0 +1,33 @@
+﻿<Page
+    x:Class="newapp.Create"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:newapp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Button x:Name="NewEventCreated" Content="Broadcast" HorizontalAlignment="Right" VerticalAlignment="Bottom" Click="NewEventCreated_Click" Margin="0,0,147,68" Width="131"/>
+        <StackPanel Orientation="Vertical" Margin="10,10,10,100">
+
+
+            <TextBlock Text="Event Name" FontSize="16"/>
+            <TextBox  Name="EventName" FontSize="16"></TextBox>
+            <TextBlock  Text="EventVenue"  FontSize="16"></TextBlock>
+            <TextBox Name="Venue" FontSize="16"></TextBox>
+            <TextBlock  Text="Time"  FontSize="16"></TextBlock>
+            <TextBox Name="EventTime" FontSize="16"></TextBox>
+            <TextBlock Text="Interests" FontSize="20"></TextBlock>
+            <CheckBox x:Name="FootballTick2" Content="Football" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="16" Checked="FootballTick2_Checked"/>
+            <CheckBox x:Name="MovieTick2" Content="Movie" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="16" Checked="MovieTick2_Checked"/>
+            <CheckBox x:Name="DiscussionTick2" Content="Discussion" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="16" Checked="DiscussionTick2_Checked"/>
+            <CheckBox x:Name="CounterStrikeTick2" Content="CounterStrike" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="16" Checked="CounterStrikeTick2_Checked"/>
+
+        </StackPanel>
+
+
+
+
+    </Grid>
+</Page>
